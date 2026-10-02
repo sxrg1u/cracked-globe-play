@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="cesium/Widgets/widgets.css">
+    <script src="cesium/Cesium.js"></script>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Cracked Globe</title>
+    <meta name="description" content="Real-time strategy in the browser: lead a real country, 28 days, words have consequences." />
+    <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet" />
+    <script type="module" crossorigin src="./assets/index-B_wEQsDT.js"></script>
+    <link rel="stylesheet" crossorigin href="./assets/index-Do5lAw3x.css">
+  </head>
+  <body>
+    <div id="globe"></div>
+    <div id="windows"></div>
+    <div id="tooltip" hidden></div>
+
+    <section id="screen" hidden>
+      <svg class="logo" viewBox="0 0 120 120" aria-hidden="true">
+        <circle cx="60" cy="60" r="52" fill="none" stroke="#6fcf6f" stroke-width="2.5" />
+        <ellipse cx="60" cy="60" rx="52" ry="18" fill="none" stroke="#6fcf6f" stroke-width="1.5" />
+        <ellipse cx="60" cy="60" rx="52" ry="36" fill="none" stroke="#6fcf6f" stroke-width="1.5" />
+        <ellipse cx="60" cy="60" rx="18" ry="52" fill="none" stroke="#6fcf6f" stroke-width="1.5" />
+        <ellipse cx="60" cy="60" rx="36" ry="52" fill="none" stroke="#6fcf6f" stroke-width="1.5" />
+        <path d="M78 8 L66 34 L74 46 L56 66 L64 80 L46 112" fill="none" stroke="#0c0d0a" stroke-width="6" stroke-linejoin="round" />
+        <path d="M78 8 L66 34 L74 46 L56 66 L64 80 L46 112" fill="none" stroke="#ecebe2" stroke-width="2" stroke-linejoin="round" />
+      </svg>
+      <h1>CRACKED GLOBE</h1>
+      <p class="sub">A world at war · 28 days · every country playable</p>
+      <div id="screen-menu"></div>
+      <p class="foot">Single player against the computer. Imagery: NASA EOSDIS GIBS. Borders: Natural Earth.</p>
+    </section>
+    <section class="pn" id="pick" hidden></section>
+
+    <div id="alert-frame" aria-hidden="true"></div>
+    <div id="crt" aria-hidden="true"></div>
+    <svg id="crack" viewBox="0 0 1440 900" preserveAspectRatio="none" aria-hidden="true">
+      <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+        <g stroke="#000" stroke-opacity="0.7" stroke-width="2" transform="translate(1.5,1.5)">
+          <path d="M1062,592 L1034,618 L1042,642 L1010,670 L1018,702 L988,744" />
+          <path d="M1034,618 L1002,608 L984,620" />
+          <path d="M1042,642 L1068,654 L1092,648" />
+          <path d="M1062,592 L1080,572 M1062,592 L1086,598 M1062,592 L1050,570" />
+        </g>
+        <g stroke="#ecebe2" stroke-opacity="0.85" stroke-width="1.2">
+          <path d="M1062,592 L1034,618 L1042,642 L1010,670 L1018,702 L988,744" />
+          <path d="M1034,618 L1002,608 L984,620" />
+          <path d="M1042,642 L1068,654 L1092,648" />
+          <path d="M1062,592 L1080,572 M1062,592 L1086,598 M1062,592 L1050,570" />
+        </g>
+      </g>
+      <polygon points="1062,592 1086,598 1092,648 1068,654 1042,642 1034,618" fill="#fff" fill-opacity="0.04" />
+    </svg>
+    <div id="loading">LOADING WORLD ...</div>
+  </body>
+</html>
